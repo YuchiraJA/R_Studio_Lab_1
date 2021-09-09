@@ -1,15 +1,8 @@
-Gender<-c(0,1,0,1,1,1)
-Gender
 
-class(Gender)
-
-#factor()
-
-Gender <- factor(Gender, c(0,1),c("Male","Female"))
-Gender
-class(Gender)
 
  
+#INTRODUTION TO R STUDIO (BEGINNING OF LAB 1)
+
 #method to get current working directory
 getwd()
 
@@ -71,3 +64,50 @@ help(data.frame)
 
 #Operator "<<-" is normally only used in functions, to access variables in the global environment, instead of the local environment.
 
+
+
+#vector - a sequence of numbers or characters, or higher-dimensional arrays like matrices.
+
+#a method to create a vector. we use c() funtion to create vector
+p<-c(1,2,3,4,5,6,7,8,9,10)
+p
+
+class(p)
+
+q<-c("A","B","C")
+q
+
+class(q)
+
+
+# method to combine vectors, we also use c() function to combine vectors
+r<-c(p,q)
+r
+
+
+#method to show or call all objects/vectors we created
+objects()
+
+
+
+#--------------------------------------------------------------------------------
+#NOW WE ARE SHOWING HOW TO CREATE THE FACTORS
+
+#Gender = variable name
+#c() = creat vector method
+#class = check the class eg:numeric or character
+
+G<-c(0,1,0,1,1,1)
+G
+class(G)
+
+
+#WHAT IS FACTOR?
+# A factor is a character vector augmented with information about the 
+#possible categories, called the levels of the factor. As an example,
+
+
+#method to create, we use "factor()" function
+G<-factor(G,c(0,1),c("Male","Female"))
+G
+class(G)
