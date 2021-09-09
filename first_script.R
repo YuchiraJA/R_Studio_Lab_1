@@ -30,6 +30,12 @@ help(data.frame)
 
 
 
+# class() function use to check the class 
+         #eg: numeric, character, list, factor
+class() 
+
+
+
 #Operator and #Description 
 
 # + Addition 
@@ -91,23 +97,59 @@ objects()
 
 
 #--------------------------------------------------------------------------------
-#NOW WE ARE SHOWING HOW TO CREATE THE FACTORS
-
-#Gender = variable name
-#c() = creat vector method
-#class = check the class eg:numeric or character
-
-G<-c(0,1,0,1,1,1)
-G
-class(G)
+#THE FACTORS
 
 
 #WHAT IS FACTOR?
+# Typically, in an experiment samples are classified into one of a set group of categories. In R such results are stored in a factor. 
 # A factor is a character vector augmented with information about the 
 #possible categories, called the levels of the factor. As an example,
 
 
+#Eg:
+
+#Gender = variable name
+#c() = creat vector method
+#class = check the class eg: numeric, character, list, factor
+
+Gender<-c(0,1,0,1,1,1)
+Gender
+
+class(Gender)
+
+
 #method to create, we use "factor()" function
-G<-factor(G,c(0,1),c("Male","Female"))
-G
-class(G)
+Gender<-factor(Gender,c(0,1),c("Male","Female"))
+Gender
+
+class(Gender)
+
+
+#--------------------------------------------------------------------------------
+#THE LISTS
+
+# A list is an ordered collection of objects. Unlike vectors, lists can be used if we want to create 
+# collections of vectors or other data objects of mixed type. 
+
+# The objects in a list are known as its "components".
+
+
+#we need to use "list()" function to create Lists
+#eg:
+k<-c(1,2,3,4,5)
+n<-c("Achini","Amal","Dinul","Nayani","Malithi")
+m<-100
+
+Data_x<-list(k,n,m)
+Data_x
+
+class(Data_x)
+
+#--------------------------------------------------------------------------------
+#THE MATRIX
+
+#Can be used to represent matrices in R. It is same as in vectors, all elements should be of the same type.
+
+#we need to use "list()" function to create Lists
+#eg:
+
