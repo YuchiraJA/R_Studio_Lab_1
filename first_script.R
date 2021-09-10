@@ -179,8 +179,9 @@ matrix_01
 #-------------------------------------------------------------------------------
 #THE DATA FRAMES
 
-# A data.frame object in R has similar dimensional properties to a matrix but it may contain different
-# types of data in it. A list be made into a data.frame when,
+# A data.frame object in R has similar dimensional properties to a matrix but it may contain different 
+#  A list be made into a data.frame when,
+
 # • Components are vectors (numeric, character, logical) or factors.
 # • All vectors and factors must have the same lengths.
 # • Elements in a data frame is indexed like a matrix.
@@ -188,3 +189,18 @@ matrix_01
 # • Character vectors in a data frame are always stored as a factor. 
 
 #we need to use "frame()" function to create Matrix
+
+Height<-c(67,100,120,54,98)
+Weight<-c(35,45,68,48,55)
+
+data_set<-data.frame(Height,Weight)
+data_set
+
+class(data_set)
+
+h<-c(1,2,3,4,5,7,8,9)
+a<-c(21,23,34,6,7,4,5,6)
+ c<-c(4,5,6,7,8,9)
+data12<-data.frame(h,a)
+data12
+ 
