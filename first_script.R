@@ -1,6 +1,7 @@
 
 
- 
+
+#--------------------------------------------------------------------------------
 #INTRODUTION TO R STUDIO (BEGINNING OF LAB 1)
 
 #method to get current working directory
@@ -71,10 +72,12 @@ class()
 #Operator "<<-" is normally only used in functions, to access variables in the global environment, instead of the local environment.
 
 
+#--------------------------------------------------------------------------------
+#THE VECTOR
 
 #vector - a sequence of numbers or characters, or higher-dimensional arrays like matrices.
 
-#a method to create a vector. we use c() funtion to create vector
+#a method to create a vector. we use "c()" funtion to create vector
 p<-c(1,2,3,4,5,6,7,8,9,10)
 p
 
@@ -145,11 +148,43 @@ Data_x
 
 class(Data_x)
 
+
 #--------------------------------------------------------------------------------
 #THE MATRIX
 
 #Can be used to represent matrices in R. It is same as in vectors, all elements should be of the same type.
 
-#we need to use "list()" function to create Lists
-#eg:
+#we need to use "matrix()" function to create Matrix
 
+
+#example_1:
+
+matrix_01<-matrix(c(1,2,3,4),nrow = 2,ncol = 2,byrow = TRUE)
+matrix_01
+#matrix_01 : new variable 
+#norow : no of rows
+#nocol : no of col
+#byrow = TRUE : start filling numbers tO matrix from rows side
+#byrow = FALSE : start filling numbers to matrix from columns side (this type not mention in previous example, the second example have it)
+
+
+
+#example_2:
+
+matrix_01<-matrix(c(1,2,3,4),nrow = 2,ncol = 2,byrow = FALSE)
+matrix_01
+
+
+
+#-------------------------------------------------------------------------------
+#THE DATA FRAMES
+
+# A data.frame object in R has similar dimensional properties to a matrix but it may contain different
+# types of data in it. A list be made into a data.frame when,
+# • Components are vectors (numeric, character, logical) or factors.
+# • All vectors and factors must have the same lengths.
+# • Elements in a data frame is indexed like a matrix.
+# • Columns can be accessed using the column names as in lists (using $ operator).
+# • Character vectors in a data frame are always stored as a factor. 
+
+#we need to use "frame()" function to create Matrix
